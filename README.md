@@ -59,9 +59,7 @@ deactivate
 3. System Model
 
 - **Superposition Coding**: Combining signals with different power levels based on priority.  
-  \[
-  s\_{\text{total}} = \sqrt{\alpha_1} s_1 + \sqrt{\alpha_2} s_2
-  \]
+  `s_total = sqrt(alpha_1) * s_1 + sqrt(alpha_2) * s_2`
 
 - **Successive Interference Cancellation (SIC)**: To ensure proper decoding at the receiver.
   - User 2 decodes User 1’s signal first, subtracts it, then decodes its own.
@@ -70,15 +68,9 @@ deactivate
 
 4. Optimization Problem Formulation
 
-- **Objective Function**: Maximizing the sum rate:  
-  \[
-  R*{\text{sum}} = \sum*{i=1}^N \log_2 \left( 1 + \frac{\text{Signal Power}\_i}{\text{Interference + Noise}} \right)
-  \]
+- **Objective Function**: Maximize the sum rate:  
+  `R_sum = sum(i=1 to N) log_2(1 + Signal_Power_i / (Interference + Noise))`
 
 - **Constraints**:  
-  \[
-  \sum*{i=1}^N P_i \leq P*{\text{total}}
-  \]  
-  \[
-  R*i \geq R*{\text{min}\_i} \quad \text{(for each user)}
-  \]
+  `sum(i=1 to N) P_i <= P_total`  
+  `R_i >= R_min_i` (for each user)
