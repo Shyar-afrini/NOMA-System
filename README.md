@@ -56,7 +56,7 @@ deactivate
 - User QoS Requirements: Each user must achieve a minimum required data rate.
 - Channel Conditions: Take user channel gains into account (e.g., stronger users get less power in NOMA).
 
-## 3. System Model
+3. System Model
 
 - **Superposition Coding**: Combining signals with different power levels based on priority.  
   \[
@@ -68,7 +68,7 @@ deactivate
 
 ---
 
-## 4. Optimization Problem Formulation
+4. Optimization Problem Formulation
 
 - **Objective Function**: Maximizing the sum rate:  
   \[
