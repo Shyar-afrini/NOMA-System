@@ -1,0 +1,4 @@
+numpy==2.2.2
+packaging==24.2
+plotly==5.24.1
+tenacity==9.0.0
